@@ -35,10 +35,6 @@ class MonitorController extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-
-        ]);
         $monitor=new Monitor;
         $monitor->sira_no=$request->sira_no;
         $monitor->mudurluk=$request->mudurluk;

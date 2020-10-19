@@ -37,9 +37,6 @@ class Yazici_2Controller extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-        ]);
         $yazici_2= new Yazici_2;
         $yazici_2->yazici_no=$request->yazici_no;
         $yazici_2->seri_no=$request->seri_no;

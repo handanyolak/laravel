@@ -39,9 +39,6 @@ class MonitorYeniController extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-        ]);
         $monitor_yeni=new Monitor_Yeni;
         $monitor_yeni->monitor_no=$request->monitor_no;
         $monitor_yeni->ozellik=$request->ozellik;

@@ -37,9 +37,6 @@ class Thin_IstemciController extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-        ]);
         $thin_istemci=new Thin_Istemci;
         $thin_istemci->t_no=$request->t_no;
         $thin_istemci->seri_no=$request->seri_no;

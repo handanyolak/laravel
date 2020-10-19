@@ -37,9 +37,7 @@ class NotebookController extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-        ]);
+
         $notebook=new Notebook;
         $notebook->sn=$request->sn;
         $notebook->marka=$request->marka;

@@ -38,9 +38,6 @@ class KasaController extends Controller
     }
 
     public function create(Request $request){
-        $request->validate([
-            'mudurluk'=>'required',
-        ]);
         $kasa= new Kasa;
         $kasa->pc_no=$request->pc_no;
         $kasa->islemci=$request->islemci;

@@ -118,7 +118,7 @@
                         </div>
                         <div class="form-group">
                             <label>Müdürlük</label>
-                            <select class="form-control" name="mudurluk">
+                            <select class="form-control" name="mudurluk" required>
                                 <option value="">Seçiniz</option>
                                 @foreach($mudurlukler_tablos as $mudurlukler_tablo)
                                     <option value="{{ $mudurlukler_tablo->mudurluk }}">{{ $mudurlukler_tablo->mudurluk }}</option>
@@ -184,9 +184,9 @@
                         </div>
                         <div class="form-group">
                             <label>Müdürlük</label>
-                            <select class="form-control" name="mudurluk" id="mudurluk">
+                            <select class="form-control" name="mudurluk" id="mudurluk" required>
                                 @foreach ($mudurlukler_tablos as $mudurlukler_tablo)
-                                    <option value="{{ $mudurlukler_tablo->mudurluk }}" {{ ( $mudurlukler_tablo->mudurluk == $thin_istemci_tablos) ? 'selected' : '' }}> {{ $mudurlukler_tablo->mudurluk }} </option>
+                                    <option value="{{ $mudurlukler_tablo->mudurluk }}"> {{ $mudurlukler_tablo->mudurluk }} </option>
                                 @endforeach
                             </select>
                         </div>

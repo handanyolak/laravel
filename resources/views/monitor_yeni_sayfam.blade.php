@@ -120,7 +120,7 @@
                         </div>
                         <div class="form-group">
                             <label>Müdürlük</label>
-                            <select class="form-control" name="mudurluk">
+                            <select class="form-control" name="mudurluk" required>
                                 <option value="">Seçiniz</option>
                                 @foreach($mudurlukler_tablos as $mudurlukler_tablo)
                                     <option value="{{ $mudurlukler_tablo->mudurluk }}">{{ $mudurlukler_tablo->mudurluk }}</option>
@@ -179,6 +179,7 @@
                         <div class="form-group">
                             <label>Monitör No</label>
                             <input id="monitor_no" type="text" class="form-control" name="monitor_no">
+                            <input type="hidden" name="id" id="monitor_yeni_id">
                         </div>
                         <div class="form-group">
                             <label>Özellik</label>
@@ -186,11 +187,7 @@
                         </div>
                         <div class="form-group">
                             <label>Marka</label>
-                            <select class="form-control" name="mudurluk" id="mudurluk">
-                                @foreach ($mudurlukler_tablos as $mudurlukler_tablo)
-                                    <option value="{{ $mudurlukler_tablo->mudurluk }}" {{ ( $mudurlukler_tablo->mudurluk == $monitor_yeni_tablos) ? 'selected' : '' }}> {{ $mudurlukler_tablo->mudurluk }} </option>
-                                @endforeach
-                            </select>
+                            <input id="marka" type="text" class="form-control" name="marka">
                         </div>
                         <div class="form-group">
                             <label>Zimmet</label>
@@ -198,7 +195,11 @@
                         </div>
                         <div class="form-group">
                             <label>Müdürlük</label>
-                            <input id="mudurluk" type="text" class="form-control" name="mudurluk">
+                            <select class="form-control" name="mudurluk" id="mudurluk" required>
+                                @foreach ($mudurlukler_tablos as $mudurlukler_tablo)
+                                    <option value="{{ $mudurlukler_tablo->mudurluk }}"> {{ $mudurlukler_tablo->mudurluk }} </option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="form-group">
                             <label>Verilme Tarihi</label>
@@ -271,7 +272,7 @@
                     url: '{{ route('monitoryeni.getdata') }}',
                     data: {id: id},
                     success: function (data) {
-                        console.log(data);
+                        $('#monitor_yeni_id').val(data.id);
                         $('#monitor_no').val(data.monitor_no);
                         $('#ozellik').val(data.ozellik);
                         $('#marka').val(data.marka);
@@ -284,7 +285,6 @@
                         $('#durum').val(data.durum);
                         $('#ekstra').val(data.ekstra);
                         $('#ekstra_2').val(data.ekstra_2);
-                        $('#monitor_yeni_id').val(data.id);
                         $('#editModal').modal();
                     }
                 });
