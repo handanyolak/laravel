@@ -23,10 +23,6 @@ class Anasayfa extends Controller
         view()->share('kategoriler', Kategori::all());
     }
 
-    public function index() {
-        return view('anasayfam');
-    }
-
     public function iletisim() {
         return view('iletisim');
     }

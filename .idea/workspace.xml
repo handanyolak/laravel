@@ -3,20 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ca1fdebd-c164-4599-bb22-6ee8939a9671" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/KasaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/KasaController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MonitorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MonitorController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MonitorYeniController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MonitorYeniController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/NotebookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/NotebookController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Thin_IstemciController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Thin_IstemciController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Yazici_1Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Yazici_1Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Yazici_2Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Yazici_2Controller.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/kasa_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/kasa_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/monitor_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/monitor_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/monitor_yeni_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/monitor_yeni_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/notebook_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/notebook_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/thin_istemci_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/thin_istemci_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/yazici_1_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yazici_1_sayfam.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/yazici_2_sayfam.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/yazici_2_sayfam.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Anasayfa.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Anasayfa.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/anasayfam.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +193,10 @@
       <workItem from="1602956552002" duration="1372000" />
       <workItem from="1603037946486" duration="79000" />
       <workItem from="1603038033803" duration="6886000" />
-      <workItem from="1603101981819" duration="1117000" />
+      <workItem from="1603101981819" duration="1598000" />
+      <workItem from="1603176258716" duration="177000" />
+      <workItem from="1603348742265" duration="92000" />
+      <workItem from="1603349753358" duration="9487000" />
     </task>
     <servers />
   </component>
@@ -212,10 +208,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="0" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1602957826244" />
-    <state x="467" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602682691952">
-      <screen x="0" y="0" width="1366" height="768" />
+    <state x="467" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603355712872">
+      <screen x="0" y="0" width="1366" height="722" />
     </state>
-    <state x="467" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.722@0.0.1366.722" timestamp="1602488395801" />
+    <state x="467" y="177" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.722@0.0.1366.722" timestamp="1603355712872" />
     <state x="-1395" y="-92" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768/-1920.-304.1536.864@-1920.-304.1536.864" timestamp="1602534559384" />
     <state x="467" y="188" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1602682691952" />
     <state x="584" y="235" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1707.960@0.0.1707.960" timestamp="1602451286053" />
@@ -224,5 +220,9 @@
     </state>
     <state x="184" y="5" key="SettingsEditor/0.0.1366.722@0.0.1366.722" timestamp="1602315451773" />
     <state x="184" y="5" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1602588165220" />
+    <state x="346" y="43" width="672" height="678" key="search.everywhere.popup" timestamp="1603362752086">
+      <screen x="0" y="0" width="1366" height="722" />
+    </state>
+    <state x="346" y="43" width="672" height="678" key="search.everywhere.popup/0.0.1366.722@0.0.1366.722" timestamp="1603362752086" />
   </component>
 </project>
